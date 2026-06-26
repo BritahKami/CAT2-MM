@@ -4,17 +4,21 @@ const button = document.getElementById("toggleBtn");
 
 button.addEventListener("click", () => {
 
-```
-if (video.paused) {
 
-    video.style.display = "block";
-    video.play();
+ if (video.style.display === "none") {
 
-} else {
+        // Show and play the video
+        video.style.display = "block";
+        video.play();
+        button.textContent = "Hide Video";
 
-    video.style.display = "none";
+    } else {
 
-}
-```
+        // Hide and pause the video
+        video.pause();
+        video.style.display = "none";
+        button.textContent = "Play Video";
+
+    }
 
 });
