@@ -46,18 +46,19 @@ font-size:1rem;
 }
 
 button:hover,
-button:focus
+button:focus{
+    background:#1b5e20;
+    outline:3px solid #81c784;
+}
 
 @media (max-width:600px){
 
-```
-h1{
-    font-size:1.8rem;
-}
+    h1{
+        font-size:1.8rem;
+    }
 
-button{
-    width:100%;
-}
-```
+    button{
+        width:100%;
+    }
 
 }
